@@ -15,6 +15,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "list": "npm list --depth=0",
     "start": "set isDev=true && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
