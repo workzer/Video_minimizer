@@ -2,9 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Once installed, Electron was added to the project.
+The directory was then cleaned and both react and electron tested to make sure that they talk to each other.
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run startAll`
+
+Runs the react app in the development mode and then launch the Electron window.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ### `npm start`
 
