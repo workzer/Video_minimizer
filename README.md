@@ -1,9 +1,8 @@
-# Getting Started with Create React App
+# Why this app ?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Once installed, Electron was added to the project.
-The directory was then cleaned and both react and electron tested to make sure that they talk to each other.
+I have made this software because I personally use Handbrake to compress my videos before putting them on my cloud storage and unfortunate Handbrake do not copy the usefull metadata added by my phone (location, date of capture …)
+Using the software ffmpeg in command line with my huge gallery did not feel right, now using this software I am able to copy the meta from all compressed video in a folder at once.
+Hopefully, it will help somebody else.
 
 ## Available Scripts
 
