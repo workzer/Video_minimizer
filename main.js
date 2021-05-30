@@ -1,9 +1,12 @@
 const {
 	app,
-	BrowserWindow
+	BrowserWindow,
+	ipcMain
 } = require('electron')
 const path = require('path')
-const { exec } = require("child_process");
+const eventHandler = require('./event')
+
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
 function createWindow() {
 	var win = new BrowserWindow({
@@ -15,6 +18,8 @@ function createWindow() {
 			preload: path.join(__dirname, 'preload.js')
 		}
 	})
+
+	win.webContents.openDevTools()
 
 	console.info('process.env', process.env.isDev);
 
@@ -34,6 +39,9 @@ function createWindow() {
 		// when you should delete the corresponding element.
 		win = null
 	})
+
+	// console.info('eventHandler', eventHandler);
+	eventHandler(ipcMain, win)
 }
 
 app.whenReady().then(() => {
@@ -51,3 +59,4 @@ app.on('window-all-closed', () => {
 		app.quit()
 	}
 })
+
