@@ -5,6 +5,7 @@ const {
 } = require('electron')
 const path = require('path')
 const eventHandler = require('./event')
+const url = require('url');
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
@@ -19,7 +20,7 @@ function createWindow() {
 		}
 	})
 
-	win.webContents.openDevTools()
+	// win.webContents.openDevTools()
 
 	console.info('process.env', process.env.isDev);
 
