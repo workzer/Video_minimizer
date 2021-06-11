@@ -28,7 +28,7 @@
     "ejectR": "react-scripts eject",
     "startE": "electron .",
     "ed": "set isDev=true && electron .",
-    "startAll": "concurrently \"npm run start\" \"wait-on http://localhost:3000 && npm run ed\"",
+    "startAll": "concurrently \"npm run startR\" \"wait-on http://localhost:3000 && npm run ed\"",
     "package": "electron-forge package",
     "startEF": "electron-forge start",
     "make": "electron-forge make"
@@ -62,13 +62,15 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "asar": true
+        "asar": true,
+        "icon": "./public/favicon_io/favicon.ico"
       },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "vcop"
+            "name": "vcop",
+            "setupIcon": "./public/favicon_io/favicon.ico"
           }
         },
         {
@@ -79,7 +81,11 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "name": "vcop",
+            "icon": "./public/favicon_io/favicon.ico",
+            "maintainer": "Yannis Jaccard"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",

@@ -1,7 +1,8 @@
 const {
 	app,
 	BrowserWindow,
-	ipcMain
+	ipcMain,
+	nativeImage
 } = require('electron')
 const path = require('path')
 const eventHandler = require('./event')
@@ -9,15 +10,19 @@ const url = require('url');
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
+if(require('electron-squirrel-startup')) app.quit();
+
 function createWindow() {
 	var win = new BrowserWindow({
-		width: 800,
-		height: 600,
+		width: 600,
+		height: 500,
 		webPreferences: {
 			nodeIntegration: true,
 			contextIsolation: false, // Very important: https://www.electronjs.org/docs/tutorial/context-isolation
 			preload: path.join(__dirname, 'preload.js')
-		}
+		},
+		icon: nativeImage.createFromPath(__dirname +'/public/favicon_io/favicon.ico'),
+		center: true
 	})
 
 	// win.webContents.openDevTools()
@@ -60,4 +65,3 @@ app.on('window-all-closed', () => {
 		app.quit()
 	}
 })
-
