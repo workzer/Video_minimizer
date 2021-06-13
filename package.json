@@ -4,6 +4,7 @@
   "private": true,
   "main": "main.js",
   "homepage": "./",
+  "license": "MIT",
   "author": "Yannis Jaccard",
   "description": "Create an app that will help you copying your metadata from your orignal video to your compressed one.",
   "dependencies": {
@@ -89,7 +90,9 @@
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+
+          }
         }
       ]
     }
