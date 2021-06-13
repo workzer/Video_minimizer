@@ -91,7 +91,8 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {
-
+            "icon": "./public/favicon_io/favicon.ico",
+            "maintainer": "Yannis Jaccard"
           }
         }
       ]
