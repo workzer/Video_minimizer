@@ -19,13 +19,31 @@ Runs the react app in the development mode and then launch the Electron window.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm start`
+### `npm run startR`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Run React in DEV mode.
+Accesible at [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
+
+### `npm run startE`
+
+Will open the electron window in PROD (will try to start the page from the last build of react).
+
+### `npm run ed`
+
+Will start a electron window in DEV mode.
+
+### `npm run startAll`
+
+Will start the react server, then will wait till localhost:3000 is ready to finaly start the electron window.
+
+### `recommended way to start coding`
+
+First start react server by typing `npm run startR`
+Then in a separate terminal tab run `npm run ed` (which will open the electron window in DEV mode)
+At this point you are ready to code, all your changes will be reflected in live in your electron window, if ever you change something on the electron side, you can simply quit the process in your terminal tab rendering ed (electron DEV) and restart it.
 
 ### `npm test`
 
