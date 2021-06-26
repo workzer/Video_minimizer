@@ -2,6 +2,8 @@
 
 I have made this software because I personally use Handbrake to compress my videos before putting them on my cloud storage and unfortunately, Handbrake do not copy the useful metadata added by my phone (location, date of capture …) Using the software ffmpeg in command line with my huge gallery did not feel right, now using this software I can copy the meta from all my compressed video in a folder at once. Hopefully, it will help somebody else.
 
+![alt text](./asset_readme/demo.gif)
+
 # OS available
 
 Tested on:
