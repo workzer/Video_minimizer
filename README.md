@@ -9,7 +9,7 @@ Make sure to disable the few aumatically checked boxes from the handBrake prefer
 - Replace underscores with space 	-> uncheck
 - Remove common punctuation			-> uncheck
 
-![](./asset_readme/handBrake_setting_change.png width="400" height="auto")
+<img src="./asset_readme/handBrake_setting_change.png" width="400" height="auto">
 
 # OS available
 
