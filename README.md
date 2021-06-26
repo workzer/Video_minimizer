@@ -4,7 +4,7 @@ I have made this software because I personally use Handbrake to compress my vide
 
 ![Demo](./asset_readme/demo.gif)
 
-Make sure to disable the few aumatically checked boxes from the handBrake preferences:
+Make sure to disable the few automatically checked boxes from the handBrake preferences:
 - Change case to Title Case 		-> uncheck
 - Replace underscores with space 	-> uncheck
 - Remove common punctuation			-> uncheck
