@@ -14,13 +14,6 @@ Tested on:
 
 In the project directory, you can run:
 
-### `npm run startAll`
-
-Runs the react app in the development mode and then launch the Electron window.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm run startR`
 
 Run React in DEV mode.
@@ -47,17 +40,8 @@ First start react server by typing `npm run startR`
 Then in a separate terminal tab run `npm run ed` (which will open the electron window in DEV mode)
 At this point you are ready to code, all your changes will be reflected in live in your electron window, if ever you change something on the electron side, you can simply quit the process in your terminal tab rendering ed (electron DEV) and restart it.
 
-### `npm test`
+### Create executable
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Use the command `npm run build` to create the build version of react. Then `npm run make` to create the package for your plateform (`.exe` on windows or `.deb` and `.rpm` on Ubuntu). You can also create the .exe on Windows and `.deb` and `.rpm` using WSL.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
