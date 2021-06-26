@@ -9,7 +9,7 @@ var {info, log, warn} = console
 	HandBrake CLI command line: https://handbrake.fr/downloads2.php
  */
 
-const direOut = "metaed";
+const direOut = "meta_added";
 const initVar = {
 	dir: null,
 	files: [],
@@ -128,11 +128,11 @@ function App() {
 		<div className="App d-flex d-flex justify-content-center align-items-center h-100 w-100 bg-secondary">
 			<div className="d-flex flex-column border w-70 pt-4 px-4 pt-4 bg-light rounded">
 				<div className="d-flex flex-row justify-content-center">
-					<div className="rounded text-light bg-dark bg-gradient d-flex d-flex flex-column justify-content-center align-items-center border d-inline-block" style={{width: "150px", height: "100px"}} onDrop={eventDragDrop} onDragOver={eventDragOver}>
+					<div className="rounded text-light bg-dark bg-gradient d-flex d-flex flex-column justify-content-center align-items-center border d-inline-block" style={{/* width: "150px", height: "100px" */ minWidth: "250px", minHeight: "150px" }} onDrop={eventDragDrop} onDragOver={eventDragOver}>
 						Drag your folder here
 						<div className={"text-center smallText " + (!dir? "d-none" : "")}>
 							<div className="text-success">Selected:</div>
-							<span className="fw-bold">{dirSelected}</span>
+							<span className="fw-bold text-break">{dirSelected}</span>
 						</div>
 					</div>
 					{/* <div className="p-3">

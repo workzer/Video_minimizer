@@ -23,7 +23,6 @@
   "scripts": {
     "list": "npm list --depth=0",
     "startR": "set isDev=true && react-scripts start",
-
     "buildR": "react-scripts build",
     "testR": "react-scripts test",
     "ejectR": "react-scripts eject",
