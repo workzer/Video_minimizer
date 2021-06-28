@@ -17,14 +17,12 @@ Tested on:
  - Windows 10 build 19042
  - Ubuntu 20.04 LTS
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ## Requirement
 
-In the project directory, you can run:
+You will need to have `ffmpeg` on your system and accesible through command line (added to your PATH).
 
+## Available Scripts
 ### `npm run startR`
 
 Run React in DEV mode.
